@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popWindowBackColor"
+    android:padding="10dp"
+    >
+    <EditText
+        android:padding="7dp"
+        android:id="@+id/ed_quite_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="start"
+        android:background="@drawable/edittext_bg"
+        android:hint="输入文字"
+        />
+    <Button
+        android:id="@+id/btn_quite_text_ok"
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

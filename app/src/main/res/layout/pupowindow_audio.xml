@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/http"
+    android:background="#9d3b3939"
+    >
+
+  <ImageView
+      android:background="@drawable/voice_2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/imageView"
+      android:layout_gravity="center"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+       />
+    <TextView
+        android:text="00:00"
+        android:textColor="@color/dialogBackColor"
+        android:textSize="20sp"
+        android:id="@+id/tv_pop_audio_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:text="松开保存，向上滑动取消"
+        android:textColor="@color/dialogBackColor"
+        android:id="@+id/tv_pop_audio_showInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pop_audio_time"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <declare-styleable name="SlideMode">
+        <attr name="mode">
+            <enum name="forbid" value="0"></enum>
+            <enum name="right" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

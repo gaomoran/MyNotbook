@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mrg.mynotbook.widget.SoftInputCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_edit_diary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrg.mynotbook.ui.EditDiaryActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:id="@+id/rl_edit_diary_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/toolbar_bgcolor"
+            app:layout_collapseMode="pin">
+
+            <Button
+                android:id="@+id/btn_editDiary_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignBottom="@+id/tv_editDiary_week"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/ic_bar_back"
+                app:layout_collapseMode="pin" />
+
+
+            <TextView
+                android:id="@+id/tv_editDiary_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_editDiary_week"
+                android:layout_marginBottom="2dp"
+                android:layout_toLeftOf="@+id/tv_editDiary_day"
+                android:layout_toStartOf="@+id/tv_editDiary_day"
+                android:text="2017/15"
+                android:textSize="13sp"
+                app:layout_collapseMode="pin" />
+
+
+            <TextView
+                android:id="@+id/tv_editDiary_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_editDiary_week"
+                android:layout_toRightOf="@+id/tv_editDiary_week"
+                android:text="10"
+                android:textSize="45sp"
+                app:layout_collapseMode="pin" />
+
+
+            <TextView
+                android:id="@+id/tv_editDiary_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_editDiary_day"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/btn_editDiary_back"
+                android:layout_toRightOf="@+id/btn_editDiary_back"
+                android:text="星期三"
+                android:textSize="17sp"
+                app:layout_collapseMode="pin" />
+
+
+            <Button
+                android:id="@+id/btn_editDiary_weather"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_alignTop="@+id/btn_editDiary_mood"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/btn_editDiary_mood"
+                android:layout_toStartOf="@+id/btn_editDiary_mood"
+                android:background="@drawable/ic_diary_bar_sunny"
+                app:layout_collapseMode="pin" />
+
+
+            <Button
+                android:id="@+id/btn_editDiary_mood"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_alignTop="@+id/btn_editDiary_collection"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/btn_editDiary_collection"
+                android:layout_toStartOf="@+id/btn_editDiary_collection"
+                android:background="@drawable/ic_diary_bar_happy"
+                app:layout_collapseMode="pin" />
+
+
+            <Button
+                android:id="@+id/btn_editDiary_collection"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_alignBottom="@+id/tv_editDiary_week"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/collno"
+                app:layout_collapseMode="pin" />
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_edit_diary" />
+
+
+</com.mrg.mynotbook.widget.SoftInputCoordinatorLayout>

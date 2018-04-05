@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8fc31f</color>
+    <color name="colorPrimaryDark">#8fc31f</color>
+    <color name="colorAccent">#8fc31f</color>
+    <color name="colorNo">#e7e6e6</color>
+    <color name="dialogBackColor">#71d4da</color>
+    <color name="popWindowBackColor">#f2f2f2</color>
+    <color name="activityBackColor">#eeeeee</color>
+    <color name="layoutBackColor">#ffffff</color>
+    <color name="cancelButtonColor">#e4a541</color>
+    <color name="phaALLColor">#00000000</color>
+    <color name="textColorW">#ffffff</color>
+    <color name="textColorWp">#d3ffffff</color>
+    <color name="indexBottomColor">#a08fc31f</color>
+    <!-- 主界面按钮颜色-->
+    <color name="addDiary">#ced752</color>
+    <color name="addPhone">#49e9c1</color>
+    <color name="addNote">#c57bf7</color>
+    <color name="quiteTextColor">#71d4da</color>
+    <color name="quiteAudioColor">#f2c304</color>
+    <color name="quiteNoteColor">#ffffff</color>
+    <color name="quiteImageColor">#91c422</color>
+
+
+
+</resources>

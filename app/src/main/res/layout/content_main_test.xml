@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackColor"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mrg.mynotbook.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginBottom="32dp"
+
+        android:id="@+id/rv_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_null"
+        android:textSize="25sp"
+        android:text="还没有内容\n快去右下角添加吧↘"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <!-- 上拉列表-->
+    <com.mrg.mynotbook.widget.MultiDirectionSlidingDrawer xmlns:my="http://schemas.android.com/apk/res/com.mrg.mynotbook"
+        android:id="@+id/dr_main_quite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        my:content="@+id/rv_main_quite"
+        my:direction="bottomToTop"
+        my:handle="@+id/handle">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main_quite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activityBackColor" />
+
+        <LinearLayout
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/quite" />
+
+            <TextView
+                android:textColor="@color/textColorW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="快速记录" />
+        </LinearLayout>
+
+
+    </com.mrg.mynotbook.widget.MultiDirectionSlidingDrawer>
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp">
+
+    <RelativeLayout
+
+        android:elevation="3dp"
+        android:layout_margin="3dp"
+        android:background="@color/layoutBackColor"
+
+        android:id="@+id/rl_phone_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        >
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/tv_phone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:text="名字"
+            android:textSize="20sp"
+            android:layout_alignTop="@+id/img_user"
+            android:layout_toRightOf="@+id/img_user"
+            android:layout_toEndOf="@+id/img_user" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18788888888"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/img_user"
+            android:layout_alignLeft="@+id/tv_phone_name"
+            android:layout_alignStart="@+id/tv_phone_name" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_phone_item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+     <Button
+         android:id="@+id/btn_phone_edit"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+         android:background="#c7c2c2"
+         android:text="编辑"
+         android:textColor="#ffffff"
+         android:textSize="18sp"
+         />
+    <Button
+        android:id="@+id/btn_phone_delete"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="删除"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:background="#dc3a3a"
+        />
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

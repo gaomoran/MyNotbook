@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">随记</string>
+    <string name="action_settings">┑(￣Д ￣)┍</string>
+    <string name="title_activity_add_note">AddNoteActivity</string>
+    <string name="title_activity_diary">DiaryActivity</string>
+    <string name="title_activity_phone">PhoneActivity</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="search_title">搜索</string>
+    <string name="phone_title_alert">提示</string>
+    <string name="title_activity_edit_diary">EditDiaryActivity</string>
+    <item name="tag_id" type="id">1000</item>
+    <item name="tag_position" type="id">1001</item>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+</resources>

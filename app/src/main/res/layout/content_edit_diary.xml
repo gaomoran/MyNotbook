@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mrg.mynotbook.ui.EditDiaryActivity"
+    tools:showIn="@layout/activity_edit_diary"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <EditText
+        android:id="@+id/ed_editDiary_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="这里写入标题" />
+
+
+    <com.mrg.mynotbook.widget.RichEditorText
+        android:id="@+id/ed_editDiary_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_editDiary_title"
+
+        android:layout_above="@+id/tv_editDiary_location" />
+    <TextView
+        android:id="@+id/tv_editDiary_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未定位"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_toRightOf="@+id/img_editDiary_location"
+        android:layout_toEndOf="@+id/img_editDiary_location" />
+    <ImageView
+        android:id="@+id/img_editDiary_location"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/ic_diary_location"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/ed_editDiary_content"
+        android:layout_alignStart="@+id/ed_editDiary_content" />
+    <!--底部栏-->
+    <LinearLayout
+
+        android:padding="3dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_above="@+id/view_editDiary_utils"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_image"
+
+                android:id="@+id/ib_editDiary_phone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:background="@color/colorPrimary"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+
+                android:scaleType="centerCrop"
+                android:background="@color/colorPrimary"
+
+                android:id="@+id/ib_editDiary_voice"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:src="@drawable/voice"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+
+                android:scaleType="centerCrop"
+                android:background="@color/colorPrimary"
+
+                android:id="@+id/ib_editDiary_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+
+                android:src="@drawable/location"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_editDiary_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/more"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/view_editDiary_utils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
